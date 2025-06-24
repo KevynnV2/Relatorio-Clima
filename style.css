@@ -1,0 +1,108 @@
+ body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  label, select {
+    font-size: 16px;
+    padding: 6px;
+    margin: 10px 0;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #relatorio {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+  #periodo, #paragrafo-informativo {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+  }
+
+ table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+ th, td {
+  font-size: 14px;
+  border: 1px solid #ccc; 
+  text-align: center;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+
+  th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  th img,
+th i {
+  vertical-align: middle;
+  height: 16px;         
+  margin-left: 6px;     
+}
+
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+
+
+
+  .divisoria {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 20px 0;
+}
+
+.linha-divisoria {
+  height: 1px;
+  background-color: #999;
+  margin: 20px 0;
+  width: 100%;
+}

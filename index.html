@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Relatório do Tempo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="shortcut icon" href="./img/clima.png" type="" />
+</head>
+<body>
+  <div id="relatorio">
+    <h1>Relatório de Clima e Qualidade do Ar</h1>
+
+    <label for="estado">Estado:</label>
+    <select id="estado"></select>
+
+    <label for="cidade">Cidade:</label>
+    <select id="cidade"></select>
+
+    <p id="periodo"></p>
+    <p id="paragrafo-informativo"></p>
+    <div id="qualidade-ar"><strong>Qualidade do Ar:</strong> (Dados fictícios ou anexar API real)</div>
+
+    <h2>Previsão do Tempo - 24h</h2>
+    <table id="tabela-previsao">
+      <thead>
+        <tr>
+          <th>Horário <i class="fa-solid fa-clock"></i></th>
+          <th>
+            Condição
+            <img src="img/dia-chuvoso.png" alt="">
+          </th>
+          <th>Chuva (%) <i class="fa-solid fa-cloud-rain"></i></th>
+          <th>
+            Temperatura (°C)
+            <img src="img/temperatura.png" alt="">
+          </th>
+          <th>
+            Sensação (°C)
+            <img src="img/temperatura.png" alt="">
+          </th>
+          <th>
+            Umidade (%)
+          <img src="img/tecido-absorvente-de-umidade.png" alt="" >  
+          </th>
+          <th>Vento (Kph) <i class="fa-solid fa-wind"></i></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <button onclick="salvarPDF(document.getElementById('relatorio'), 'relatorio-clima')">SALVAR</button>
+  <script src="script.js"></script>
+</body>
+</html>
